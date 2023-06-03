@@ -1,6 +1,11 @@
 spring:
   application:
     name: INVENTORY-SERVICE
+  security:
+    oath2:
+      resourceserver:
+        jwt:
+          jwt-set-uri: http://localhost:8080/realms/RentACarMicroservice/protocol/openid-connect/certs
   datasource:
     username: root
     password: '12345'

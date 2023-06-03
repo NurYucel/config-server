@@ -1,6 +1,11 @@
 spring:
   application:
     name: FILTER-SERVICE
+  security:
+    oath2:
+      resourceserver:
+        jwt:
+          jwt-set-uri: http://localhost:8080/realms/RentACarMicroservice/protocol/openid-connect/certs
   data:
     mongodb:
       database: filterdb
